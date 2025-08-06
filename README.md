@@ -24,7 +24,7 @@ Due to the sensitivity of data sourced from firmware or online devices, we provi
 
 ### Data Preparation
 
-1. The dataset is stored in `dataset_demo`, containing embedded web pages from online IoT devices, from six firmware versions of four manufacturers: D-Link, TP-LINK, Linksys, and Netgear. Both this demonstration dataset and the pre-trained model are downloadable via the [link](https://drive.google.com/file/d/1sGmf0iDw2M5wovDGAk79CTraTyFFfLCj/view?usp=sharing).
+1. The dataset is stored in `dataset_demo`, containing embedded web pages from online IoT devices, from six firmware versions of four manufacturers: D-Link, TP-LINK, Linksys, and Netgear. Both this demonstration dataset and the pre-trained model are downloadable via the [link](https://drive.google.com/file/d/1ymeBUA89LQVOEiBeLQHEDVaRspiDBBiM/view?usp=sharing).
 2. The `data_utils.py` file contains some utility functions and classes for data preprocessing and loading. These functionalities are mainly used for processing and preparing text data, especially for using pre-trained word vector models (such as GloVe) and custom datasets.
 
 ### Model Definition

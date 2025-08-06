@@ -9,8 +9,8 @@ Due to the sensitivity of data sourced from firmware or online devices, we provi
 
 1. Clone the repository：
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone git@github.com:LeiZhen0667/DeepFW.git
+    cd DeepFW
     ```
 
 2. Install the required packages:

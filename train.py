@@ -528,11 +528,11 @@ def run_experiment(root_dir, pool_size, exp_idx, method, glove_model, bert_token
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Firmware Version Identification Experiment')
-    parser.add_argument('--root_dir', type=str, default='/mnt/data/leizhen/FirmID-Web/Firm-ID-dataset',
+    parser.add_argument('--root_dir', type=str, default='Firm-ID-dataset',
                         help='Root directory of dataset')
     parser.add_argument('--glove_path', type=str, default='Static_word_embedding_pre-trained_models/glove.6B.300d.txt',
                         help='Path to GloVe pretrained model')
-    parser.add_argument('--bert_path', type=str, default='/mnt/data/leizhen/FirmID-Web/Firm-ID/scripts/bert-base-uncase',
+    parser.add_argument('--bert_path', type=str, default='bert-base-uncase',
                         help='Path to BERT model')
     parser.add_argument('--method', type=str, choices=['deepfw', 'dom_lmss', 'both'], default='both',
                         help='Method to run: deepfw, dom_lmss, or both')
@@ -654,4 +654,5 @@ if __name__ == "__main__":
               f"{res['mean_f1']:.4f}\t\t{res['std_f1']:.4f}")
     
     print(f"\nTotal execution time: {int(hours)} hours {int(minutes)} minutes {int(seconds)} seconds")
+
     print(f"All results saved to: {args.output_dir}")

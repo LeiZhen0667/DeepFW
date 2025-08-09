@@ -17,8 +17,8 @@ def load_pretrained_glove_model(glove_file):
 
 
 def preprocess_text_for_html(text):
-    cleaned_text = re.sub(r'[^\w\s]', '', text)  # 移除所有的标点符号
-    cleaned_text = cleaned_text.replace('\n', ' ')  # 移除换行符
+    # cleaned_text = re.sub(r'[^\w\s]', '', text)  # 移除所有的标点符号
+    cleaned_text = text.replace('\n', ' ')  # 移除换行符
     cleaned_text = re.sub(r'\s{2,}', ' ', cleaned_text)  # 移除连续两个空格以上的空格组合
     return cleaned_text
 
